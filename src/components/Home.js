@@ -12,6 +12,7 @@ const Home = () => {
         <li><Link to="/soup">Soup</Link></li>
         <li><Link to="/wonton">Wonton</Link></li>
         <li><Link to="/fried-rice">Fried Rice</Link></li>
+        <li><Link to="/orders">Orders</Link></li>
       </ul>
     </div>
   );

@@ -4,6 +4,7 @@ import React from 'react';
 import Soup from './components/Soup'; 
 import FriedRice from './components/FriedRice';
 import Wonton from './components/Wonton';
+import Orders from './components/Orders';
 import firebase from 'firebase/compat/app'; // Import Firebase
 import 'firebase/compat/firestore'; // Import Firestore
 import firebaseConfig from './components/firebaseConfig'; // Import Firebase config
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/wonton" element={<Wonton />} />
         {/* Pass Firestore instance as prop */}
         <Route path="/fried-rice" element={<FriedRice />} /> 
+        <Route path="/orders" element={<Orders />} />
       </Routes>
     </BrowserRouter>
   );
