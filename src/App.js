@@ -8,6 +8,7 @@ import Orders from './components/Orders';
 import firebase from 'firebase/compat/app'; // Import Firebase
 import 'firebase/compat/firestore'; // Import Firestore
 import firebaseConfig from './components/firebaseConfig'; // Import Firebase config
+import Aboutus from './components/Aboutus';
 
 // Initialize Firebase
 //firebase.initializeApp(firebaseConfig);
@@ -23,6 +24,7 @@ const App = () => {
         {/* Pass Firestore instance as prop */}
         <Route path="/fried-rice" element={<FriedRice />} /> 
         <Route path="/orders" element={<Orders />} />
+        <Route path="/about-us" element={<Aboutus />} />
       </Routes>
     </BrowserRouter>
   );
